@@ -1,0 +1,195 @@
+/* style5.css - Services Page Styles */
+
+/* Import Google Font and Variables (Ensure consistency with your main style.css) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #f0f4f8;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --gray-color: #777;
+  --accent-color: #00bcd4; /* Example accent color */
+}
+
+/* Basic Reset and Body Styling (Consider if these should be in your main style.css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-top: 60px; /* Adjust if you have a fixed header */
+}
+
+/* Header and Navigation (Consider if these should be in your main style.css) */
+header {
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Optional: Fixed header */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Services Page Specific Styles */
+
+.services-overview {
+  padding: 3rem 2rem; /* Reduced top and bottom padding */
+  text-align: center;
+  background: linear-gradient(to right, #e3f2fd, var(--background-color));
+}
+
+.services-overview h2 {
+  font-size: 2.2rem; /* Slightly smaller heading */
+  color: var(--primary-color);
+  margin-bottom: 0.8rem; /* Reduced bottom margin */
+}
+
+.services-overview p {
+  font-size: 1.1rem; /* Slightly smaller paragraph text */
+  color: var(--gray-color);
+  max-width: 700px;
+  margin: 0 auto 1.5rem; /* Reduced bottom margin */
+}
+
+.services-details {
+  padding: 2rem 2rem; /* Reduced top padding */
+}
+
+.services-details h3 {
+  font-size: 1.8rem; /* Slightly smaller heading */
+  color: var(--primary-color);
+  margin-bottom: 1.2rem; /* Reduced bottom margin */
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax */
+  gap: 1.5rem; /* Reduced gap */
+  margin-top: 1.5rem; /* Reduced top margin */
+}
+
+.services-list li {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem; /* Reduced padding */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-list li:hover {
+  transform: translateY(-3px); /* Reduced lift on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.services-list h4 {
+  font-size: 1.4rem; /* Slightly smaller heading */
+  color: var(--text-color);
+  margin-bottom: 0.6rem; /* Reduced bottom margin */
+}
+
+.services-list p {
+  color: var(--gray-color);
+  line-height: 1.6; /* Slightly reduced line height */
+  margin-bottom: 0.8rem; /* Reduced bottom margin */
+  font-size: 1rem; /* Slightly smaller font size */
+}
+
+.consultation-call {
+  padding: 3rem 2rem; /* Reduced padding */
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.consultation-call h3 {
+  font-size: 2rem; /* Slightly smaller heading */
+  color: var(--primary-color);
+  margin-bottom: 0.8rem; /* Reduced bottom margin */
+}
+
+.consultation-call p {
+  font-size: 1.1rem; /* Slightly smaller paragraph text */
+  color: var(--gray-color);
+  margin-bottom: 1.5rem; /* Reduced bottom margin */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem; /* Reduced padding */
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #008ba7;
+  transform: scale(1.03); /* Reduced scale on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.book-now-btn {
+  font-size: 1.1rem; /* Slightly smaller font size */
+}
+
+/* Footer (Consider if these should be in your main style.css) */
+footer {
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem; /* Reduced padding */
+  text-align: center;
+  color: var(--gray-color);
+  font-size: 0.85rem; /* Slightly smaller font size */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; /* Reduced top margin */
+}
