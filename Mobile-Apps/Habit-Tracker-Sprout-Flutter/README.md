@@ -24,6 +24,7 @@
 * **[App-Screenshots.pdf](./App-Screenshots.pdf)**: Visual representation of all app screens (Dashboard, Streaks, Add Habit).
 * **[Project-Requirements.pdf](./Project-Requirements.pdf)**: Detailed guidelines and problem statement from Rayonix Solutions.
 * **[Source Code (lib/)](./main.dart/)**: Core logic including streak calculation and UI widgets.
+*  **[Certification](./Sprout-RS-Certification.pdf)**: This project was completed as part of a 6-week internship.
 
 ##  How to Run
 1. Clone this repository.
