@@ -2,8 +2,6 @@
 **Internship Role:** Mobile App Developer (Rayonix Solutions)
 **Stack:** Flutter / Dart
 
-##  Visual Preview
-![Sprout App Dashboard](./sprout-preview.png)
 
 ##  Project Overview
 "Sprout" is a modern mobile application developed during my 6-week internship at **Rayonix Solutions**. It addresses the psychological challenge of habit formation by using streak-based motivation, visual analytics, and a clean user interface.
